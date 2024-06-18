@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OnlineVote</title>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+
+</head>
+<body class="">
+	
+	<nav class="pcoded-navbar menu-light ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				
+				
+				
+				<ul class="nav pcoded-inner-navbar ">
+					
+					<li class="nav-item">
+					    <a href="http://localhost:8000/dashboard" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Tableau de bord</span></a>
+					</li>
+					
+				
+					
+					<li class="nav-item">
+					    <a href="http://localhost:8000/candidat" class="nav-link "><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">Candidats</span></a>
+					</li>
+					<li class="nav-item">
+					    <a href="http://localhost:8000/votant" class="nav-link "><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span class="pcoded-mtext">Electeurs</span></a>
+					</li>
+					
+					<li class="nav-item">
+					    <a href="http://localhost:8000/vote" class="nav-link "><span class="pcoded-micon"><i class="feather icon-plus"></i></span><span class="pcoded-mtext">Nouvelle élection</span></a>
+					</li>
+					
+
+				</ul>
+			
+				
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
+		
+			
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+					<a href="#!" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						 <p style="font-size: 30px;"><span style="color: red;">Online</span>Vote</p>
+						<img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#!" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+	
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Ajouter à la blockchains</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Ajouter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ variant-chart ] start -->
+            
+  
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Ajouter le candidat sur la blockchains</h5>
+                    </div>
+                      <div id="loader">
+                       <p class="text-center">Loading...</p>
+                        </div>
+                    <div class="card-body">
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                                 <div id="content" style="display: none;">
+           
+           
+            <form onSubmit="App.create(); return true;">
+                <div class="form-group">
+                  <label for="candidatesSelect">Nom et Prenom</label>
+                  <input type="text" name="" id="candidatesName" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter </button>
+                
+              </form>
+            
+          </div>
+                            </div>
+                        </div>
+                     </div>
+              
+               
+            </div>
+          
+           
+           
+           
+            <!-- [ variant-chart ] end -->
+
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+     <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+     <script src="vendor-all.min.js"></script>
+    <script src="js/ripple.js"></script>
+    <script src="js/pcoded.min.js"></script>
+
+<script src="js/plugins/apexcharts.min.js"></script>
+
+
+
+
+
+</body>
+</html>

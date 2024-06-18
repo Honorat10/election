@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top" style="background:#1363c6">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0" >
+                <a href="index.html" class="navbar-brand">
+                                     <h1 style="color: white;">  <span style="color:red">Online</span>Vote</h1>
+
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                         <a href="index.php" class="nav-item nav-link active"><strong>Acceuil</strong></a>
+                        <a href="./public.php" class="nav-item nav-link"><strong>Election public</strong></a>
+                      <form method="post" id="codeForm">
+ <button  class="nav-item nav-link code"style="background:#1363c6;border:none;" ><strong>Eléction privée</strong></button>
+                      </form>
+                      <a href="contact.html" class="nav-item nav-link"><strong>A propos de nous</strong></a>
+                        <a href="contact.html" class="nav-item nav-link"><strong>Contact</strong></a>
+                    </div>
+                   
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+ <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+           
+             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3"><a href="./">Sélectionnez le candidat</a></div>
+                <h1 class="mb-4"></h1>
+            </div>
+            <div class="row g-4">
+                
+             <center>
+                 <div class="rows">
+                 <div class="col-md-10">
+               <form onSubmit="App.castVote(); return false;">
+              <div class="form-group">
+                <select class="form-control" id="candidatesSelect">
+                  <option value="">selectionez</option>
+                </select>
+              </div><br><br>
+              <button type="submit" class="btn btn-primary w-100">Voter Pour</button>
+              <hr />
+            </form>
+               </div>
+
+             </center>
+              </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 " style="height: 400px;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                      <a href="index.html" class="navbar-brand">
+                 <h1 style="color: white;">  <span style="color:red">Online</span>Vote</h1>
+                </a>
+                    <p class="mb-0">Notre plateforme de vote en ligne sécurisée et transparente utilise la technologie blockchain pour garantir des élections équitables et fiables. 
+     </p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Nous contacter</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i> Porto-Novo Bénin</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+229 65085026</p>
+                    <p><i class="fa fa-envelope me-3"></i>onlinevote@gmail.com</p>
+                   
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Liens rapides</h5>
+                    <a class="btn btn-link" href="">A propos de nous</a>
+                    <a class="btn btn-link" href="">Participer à une éléction publique</a>
+                    <a class="btn btn-link" href="">Participer à une éléction d'entreprise</a>
+                    <a class="btn btn-link" href="">Nous contacter</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Nos Services</h5>
+                    <a class="btn btn-link" href="">Organiser une élection d'entreprise</a>
+                    <a class="btn btn-link" href="">Organiser une élection publique</a>
+                 
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+     <script type="text/javascript">
+        $('.code').click(function(e){
+             e.preventDefault();
+            (async () =>{
+                const { value: formValues } = await Swal.fire({
+                    title: 'Renseignez le code de l\'élection',
+                    html:'   <input type="text" class="swal2-input" id="code" name="code" placeholder="EX:125963">',
+                    showCancelButton: true
+                });
+                if (formValues) {
+                    // Remplir le champ de saisie dans le formulaire
+                    $('#codeForm').append('<input type="hidden" name="code" value="' + $('#code').val() + '">');
+                    // Soumettre le formulaire
+                    $('#codeForm').submit();
+                }
+            })();
+        });
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/jquery.min.js"></script>
+   <script>
+    App = {
+  web3Provider: null,
+  contracts: {},
+  account: '0x0',
+
+  init: function() {
+    return App.initWeb3();
+  },
+
+  initWeb3: function() {
+    if (typeof web3 !== 'undefined') {
+      // If a web3 instance is already provided by Meta Mask.
+      App.web3Provider = web3.currentProvider;
+      web3 = new Web3(web3.currentProvider);
+    } else {
+      // Specify default instance if no web3 instance provided
+      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+      web3 = new Web3(App.web3Provider);
+    }
+    
+    return App.initContract();
+  },
+
+  initContract: function() {
+    $.getJSON("Election.json", function(election) {
+      // Instantiate a new truffle contract from the artifact
+      App.contracts.Election = TruffleContract(election);
+      // Connect provider to interact with contract
+      App.contracts.Election.setProvider(App.web3Provider);
+
+      App.listenForEvents();
+      return App.render();
+    });
+  },
+  listenForEvents: function() {
+    App.contracts.Election.deployed().then(function(instance) {
+      instance.votedEvent({}, {
+        fromBlock: 0,
+        toBlock: 'latest'
+      }).watch(function(error, event) {
+        console.log("event triggered", event)
+        // Reload when a new vote is recorded
+     
+      });
+    });
+  },
+  render: function() {
+    var electionInstance;
+    var loader = $("#loader");
+    var content = $("#content");
+
+    loader.show();
+    content.hide();
+
+    // Load account data
+    web3.eth.getCoinbase(function(err, account) {
+      if (err === null) {
+        App.account = account;
+        $("#accountAddress").html("Your Account: " + account);
+      }
+    });
+    // if (window.ethereum) {
+    //   if (window.ethereum._metamask) {
+    //     if (window.ethereum._metamask.isUnlocked()) {
+    //       window.ethereum.request({ method: 'eth_requestAccounts' }).then(function(accounts) {
+    //         App.account = accounts[0];
+    //         $("#accountAddress").html("Your Account: " + accounts[0]);
+    //       }).catch(function(err) {
+    //         console.error(err);
+    //       });
+    //     } else {
+    //       console.error("MetaMask is locked. Please unlock MetaMask to proceed.");
+    //     }
+    //   } else {
+    //     console.error("MetaMask extension not detected.");
+    //   }
+    // } else {
+    //   console.error("MetaMask is not installed.");
+    // }
+
+    // Load contract data
+    App.contracts.Election.deployed().then(function(instance) {
+      electionInstance = instance;
+      return electionInstance.candidatesCount();
+    }).then(function(candidatesCount) {
+      var candidatesResults = $("#candidatesResults");
+      candidatesResults.empty();
+      var candidatesSelect = $('#candidatesSelect');
+      candidatesSelect.empty();
+
+      for (var i = 1; i <= candidatesCount; i++) {
+        electionInstance.candidates(i).then(function(candidate) {
+          var id = candidate[0];
+          var name = candidate[1];
+          var voteCount = candidate[2];
+
+          // Render candidate Result
+          var candidateTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>"
+          candidatesResults.append(candidateTemplate);
+          //les candidats
+          var candidateOption = '<option value="' + id + '">' + name + '</ option>'
+          candidatesSelect.append(candidateOption);
+        });
+
+      }return electionInstance.voters(App.account);
+    }).then(function(hasVoted) {
+     // Do not allow a user to vote
+      if(hasVoted) {
+        $('form').hide();
+      }
+      
+      loader.hide();
+      content.show();
+    }).catch(function(error) {
+      console.warn(error);
+    });
+  },
+  castVote: function() {
+    var candidateId = $('#candidatesSelect').val();
+    App.contracts.Election.deployed().then(function(instance) {
+      return instance.vote(candidateId, { from: App.account });
+    }).then(function(result) {
+      // Wait for votes to update
+      $("#content").hide();
+      $("#loader").show();
+    }).catch(function(err) {
+      console.error(err);
+    });
+  },
+  create: function() {
+    var name = $('#candidatesName').val();
+    App.contracts.Election.deployed().then(function(instance) {
+      return instance.addCandidate(name, { from: App.account });
+  }).catch(function(err) {
+      console.error(err);
+    });
+  }
+
+  
+};
+
+$(function() {
+  $(window).load(function() {
+    App.init();
+  });
+});
+   </script>
+
+</body>
+
+</html>
